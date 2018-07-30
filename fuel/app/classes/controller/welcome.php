@@ -30,6 +30,10 @@ class Controller_Welcome extends Controller
 	public function action_index()
 	{
         logger(\Fuel::L_WARNING, 'index()');
+        $player = Model_Player::forge();
+        $player->hp = 100;
+        $player->exp = 123;
+        $player->save();
 		return Response::forge(View::forge('welcome/index'));
 	}
 
