@@ -28,6 +28,7 @@ class ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
@@ -79,6 +80,10 @@ class ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
         'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
@@ -119,6 +124,10 @@ class ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -692,6 +701,7 @@ class ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit522bd8faa2fadd37e56bcac83418e6e3::$classMap;
 
