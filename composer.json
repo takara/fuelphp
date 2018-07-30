@@ -16,7 +16,8 @@
         "fuelphp/upload": "2.0.6",
         "phpunit/phpunit": "^6.5",
         "davedevelopment/phpmig": "^1.5",
-        "nesbot/carbon": "^1.32"
+        "nesbot/carbon": "^1.32",
+        "phpunit/dbunit": "^3.0"
     },
     "require-dev": {
     },
