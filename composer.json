@@ -1,8 +1,15 @@
 {
     "name": "fuel/fuel",
     "type": "project",
-    "description" : "FuelPHP is a simple, flexible, community driven PHP 5.3.3+ framework, based on the best ideas of other frameworks, with a fresh start!",
-    "keywords": ["application", "website", "development", "framework", "PHP", "PHP7"],
+    "description": "FuelPHP is a simple, flexible, community driven PHP 5.3.3+ framework, based on the best ideas of other frameworks, with a fresh start!",
+    "keywords": [
+        "application",
+        "website",
+        "development",
+        "framework",
+        "PHP",
+        "PHP7"
+    ],
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
@@ -16,13 +23,13 @@
         "fuelphp/upload": "2.0.6",
         "phpunit/phpunit": "^6.5",
         "davedevelopment/phpmig": "^1.5",
-        "nesbot/carbon": "^1.32"
+        "nesbot/carbon": "^2.0.0"
     },
     "require-dev": {
         "phpunit/dbunit": "^3.0"
     },
     "suggest": {
-        "dwoo/dwoo" : "Allow Dwoo templating with the Parser package",
+        "dwoo/dwoo": "Allow Dwoo templating with the Parser package",
         "mustache/mustache": "Allow Mustache templating with the Parser package",
         "smarty/smarty": "Allow Smarty templating with the Parser package",
         "twig/twig": "Allow Twig templating with the Parser package",
@@ -35,8 +42,12 @@
     },
     "extra": {
         "installer-paths": {
-            "fuel/{$name}": ["fuel/core"],
-            "{$name}": ["fuel/docs"]
+            "fuel/{$name}": [
+                "fuel/core"
+            ],
+            "{$name}": [
+                "fuel/docs"
+            ]
         }
     },
     "scripts": {
